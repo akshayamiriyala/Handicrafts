@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0803c;
+    color: #fff;
+    padding: 15px 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ffd1a3;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.header-btn a {
+    padding: 10px 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.header-btn .Sign-in {
+    background-color: #ffd1a3;
+    color: #f0803c;
+    border-radius: 0.5rem;
+    border: 2px solid #ffd1a3;
+}
+
+.header-btn .Sign-in:hover {
+    background-color: #f0803c;
+    color: #fff;
+}
+
+.header-btn .Sign-up {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(KrishStore.webp
+    
+        );
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 100px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.Home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.text {
+    position: relative;
+    z-index: 2;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    color: #f0803c;
+}
+
+.text span {
+    color: #fff;
+}
+
+.text p {
+    margin: 0.5rem 0 1.5rem; /* Fixed spacing */
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+
+.app-stores {
+    display: flex;
+    gap: 1rem;
+}
+
+.app-stores img {
+    width: 120px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.app-stores img:hover {
+    transform: scale(1.1);
+}
+
+.form-container {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* Updated RGB values */
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    backdrop-filter: blur(10px);
+}
+
+.form-container h2 {
+    color: #f0803c;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #f0803c;
+    width: 100%;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.form-container button {
+    padding: 12px;
+    background-color: #f0803c;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.heading {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.heading span {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f0803c;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0.5rem;
+}
+
+.Service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 50px;
+    margin: 3rem 0;
+}
+
+.Service-container .box {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Service-container .box i {
+    font-size: 40px;
+    padding: 15px;
+    background: whitesmoke;
+    border-radius: 50%;
+    color: #f0803c;
+}
+
+.Service-container .box h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.Service-container .box p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.Service-container .box:hover {
+    transform: scale(1.05);
+}
+
+.Service-container .box .bx:hover {
+    background-color: #f0803c;
+    color: rgb(255, 255, 255);
+}
+
+.Products {
+    padding: 0 100px;
+}
+
+.Products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.Products-container .box {
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+}
+
+.Products-container .box img {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Products-container .box h2 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.Products-container .box h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0.5rem;
+    color: #f0803c;
+}
+
+.Products-container .box .btn {
+    display: flex;
+    justify-content: center;
+    background: #474fa0;
+    color: #fff;
+    padding: 10px;
+    
+    border-radius: 0.5rem;
+    margin: 3px;
+}
+
+.Products-container .box .btn:hover {
+    background: #f0803c;
+}
+.about-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:3rem;
+    padding:0 50px;
+    margin-top: 3rem;
+    align-items:center ;
+}
+.about-img img{
+    width:50%;
+    height:600px;
+    object-position: center;
+    object-fit: cover;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.about-text p{
+    margin-bottom: 20px;
+    
+    
+
+}
+.about-text .btn{
+    background: #0f8163;
+    color:#fff;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+}
